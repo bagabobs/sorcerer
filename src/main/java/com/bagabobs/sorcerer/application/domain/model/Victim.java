@@ -7,7 +7,11 @@ import java.util.Arrays;
 @Component
 public class Victim {
 
-    public int getVictimByYear(int yearOfPower) {
+    public int getVictimsNumberByYear(int yearOfPower) {
+        if(yearOfPower <= 0) {
+            return 0;
+        }
+
         int[] arrInd = new int[yearOfPower];
 
         int prevYear = 0;
